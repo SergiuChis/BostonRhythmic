@@ -37,8 +37,6 @@ def compute(request):
             os.system("rm xls_diffs_and_intersection/tmp/old_file.csv")
             os.system("rm xls_diffs_and_intersection/tmp/new_file.csv")
 
-            print(output)
-
         filename = output.split("/")[-1]
 
         response = HttpResponse(open(output, "rb").read())
