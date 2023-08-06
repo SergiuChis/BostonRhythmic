@@ -7,11 +7,13 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Calculate differences and intersection</h1>
-        <form method="post" action="/xls_diffs_and_intersection/compute" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Compute</button>
-        </form>
+        <div>
+            <h1>Calculate differences and intersection</h1>
+            <form method="post" action="/xls_diffs_and_intersection/compute" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Compute</button>
+            </form>
+        </div>
     </body>
 </html>
